@@ -59,9 +59,9 @@ As we've mentioned, Observables can be chained, which means we can do something 
 
 ```js
 const input$ = Rx.Observable.fromEvent(node, 'input')
-  .map(event => event.target.value)
-  .filter(value => value.length >= 2)
-  .subscribe(value => {
+  .map((event) => event.target.value)
+  .filter((value) => value.length >= 2)
+  .subscribe((value) => {
     // use the `value`
   });
 ```
